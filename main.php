@@ -3,7 +3,7 @@
 // exit();
 
 $str = '';                                  // 出力用の空の文字列
-$file = fopen('data/todo.txt', 'r');        // ファイルを開く(読み取り専用)
+$file = fopen('data/main.txt', 'r');        // ファイルを開く(読み取り専用)
 flock($file, LOCK_EX); // ファイルをロック
 // var_dump($str);
 // exit();
@@ -27,22 +27,38 @@ fclose($file);                              // ファイル閉じる// ($strに�
 </head>
 
 <body>
-    <div class=" sub-target" id="sub-target">
-        <input id="target1" type="button" value="目標1" style="background-color:#cd853f; " onclick="location.href='first.php'">
-        <input id="target2" type="button" value="目標2" style="background-color:#00ced1; " onclick="location.href='second.php'">
-        <input id="target3" type="button" value="目標3" style="background-color:#ba55e3; " onclick="location.href='third.php'">
-        <input id="target4" type="button" value="目標4" style="background-color:#ffd700; " onclick="location.href='forth.php'">
-        <input id="target5" type="button" value="目標5" style="background-color:#ffa500; " onclick="location.href='fifth.php'">
-        <input id="target6" type="button" value="目標6" style="background-color:#ee82ee; " onclick="location.href='sixth.php'">
-        <input id="target7" type="button" value="目標7" style="background-color:#7fff00; " onclick="location.href='seventh.php'">
-        <input id="target8" type="button" value="目標8" style="background-color:#f5deb3; " onclick="location.href='eighth.php'">
-    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <input id="target1" type="button" value="目標1" style="background-color:#cd853f; " onclick="location.href='first.php'">
+                    <input id="target2" type="button" value="目標2" style="background-color:#00ced1; " onclick="location.href='second.php'">
+                    <input id="target3" type="button" value="目標3" style="background-color:#ba55e3; " onclick="location.href='third.php'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="target4" type="button" value="目標4" style="background-color:#ffd700; " onclick="location.href='forth.php'">
+                    <input id="target" type="button" value="目  的" style="background-color: #ff6347;" onclick="location.href='main.php'">
+                    <input id="target5" type="button" value="目標5" style="background-color:#ffa500; " onclick="location.href='fifth.php'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="target6" type="button" value="目標6" style="background-color:#ee82ee; " onclick="location.href='sixth.php'">
+                    <input id="target7" type="button" value="目標7" style="background-color:#7fff00; " onclick="location.href='seventh.php'">
+                    <input id="target8" type="button" value="目標8" style="background-color:#f5deb3; " onclick="location.href='eighth.php'">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <div id="first">
         <form action="zero.php" method="post">
             <fieldset id="in">
                 <legend>目的</legend>
                 <div>
-                    <p>入力: <textarea type="text" name="idea" id="write" cols="30" rows="10"></textarea></p>
+                    <p>入力: <textarea type="text" name="idea" id="write" cols="30" rows="3"></textarea></p>
                 </div>
                 <div>
                     <button>送信</button>
