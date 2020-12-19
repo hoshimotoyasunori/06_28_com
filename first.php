@@ -57,7 +57,7 @@ fclose($file1);                              // ファイル閉じる// ($strに
     <div id="first">
         <form action="ichi.php" method="post">
             <fieldset id="in">
-                <legend>目標１</legend>
+                <legend style="background-color:#cd853f; ">目標１</legend>
                 <div>
                     <p>入力: <textarea type="text" name="idea1" id="write" cols="30" rows="3"></textarea></p>
                 </div>
@@ -77,11 +77,45 @@ fclose($file1);                              // ファイル閉じる// ($strに
             </fieldset>
             <div id="submit">
                 <div>
-                    <input type="text" id="mandara_main" placeholder="目標１">
+                    <input type="text" id="mandara_1" placeholder="目標１">
                     <input type="button" value="次へ" id="ok">
                 </div>
             </div>
         </form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <textarea name="output-target1" id="output-target1" cols="20" rows="5" style="background-color:#cd853f;"></textarea>
+                        <textarea name=" output-target2" id="output-target2" cols="20" rows="5" style="background-color:#00ced1; "></textarea>
+                        <textarea name="output-target3" id="output-target3" cols="20" rows="5" style="background-color:#ba55e3; "></textarea>
+                        <!-- <input id="target1" type="button" value="目標1" style="background-color:#cd853f; " onclick="location.href='first.php'">
+                        <input id="target2" type="button" value="目標2" style="background-color:#00ced1; " onclick="location.href='second.php'">
+                        <input id="target3" type="button" value="目標3" style="background-color:#ba55e3; " onclick="location.href='third.php'"> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="output-target4" id="output-target4" cols="20" rows="5" style="background-color:#ffd700; "></textarea>
+                        <textarea name="output-target" id="output-target" cols="20" rows="5" style="background-color: #ff6347;"></textarea>
+                        <textarea name="output-target5" id="output-target5" cols="20" rows="5" style="background-color:#ffa500; "></textarea>
+                        <!-- <input id="target4" type="button" value="目標4" style="background-color:#ffd700; " onclick="location.href='forth.php'">
+                        <input id="target" type="button" value="目  的" style="background-color: #ff6347;" onclick="location.href='main.php'">
+                        <input id="target5" type="button" value="目標5" style="background-color:#ffa500; " onclick="location.href='fifth.php'"> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="output-target6" id="output-target6" cols="20" rows="5" style="background-color:#ee82ee; "></textarea>
+                        <textarea name="output-target7" id="output-target7" cols="20" rows="5" style="background-color:#7fff00; "></textarea>
+                        <textarea name="output-target8" id="output-target8" cols="20" rows="5" style="background-color:#f5deb3; "></textarea>
+                        <!-- <input id="target6" type="button" value="目標6" style="background-color:#ee82ee; " onclick="location.href='sixth.php'">
+                        <input id="target7" type="button" value="目標7" style="background-color:#7fff00; " onclick="location.href='seventh.php'">
+                        <input id="target8" type="button" value="目標8" style="background-color:#f5deb3; " onclick="location.href='eighth.php'"> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

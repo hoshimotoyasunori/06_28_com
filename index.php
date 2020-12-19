@@ -8,7 +8,7 @@
 </head>
 
 
-<FRAMESET COLS="500,*">　（FRAMESETの始まり、左右に分割）
+<FRAMESET COLS="50%,*">　（FRAMESETの始まり、左右に分割）
     <FRAME SRC="voice/index.html">（page1の表示）
         <FRAME SRC="start.php">　（page2の表示）
             <NOFRAME>　（NOFRAMESの始まり）
